@@ -1,0 +1,22 @@
+<html>
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DHp000003T9CG',
+				'LiveChatWebEmbedded',
+				'https://customization-energy-6114.my.site.com/ESWLiveChatWebEmbedded1707950548837',
+				{
+					scrt2URL: 'https://customization-energy-6114.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://customization-energy-6114.my.site.com/ESWLiveChatWebEmbedded1707950548837/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</html>
